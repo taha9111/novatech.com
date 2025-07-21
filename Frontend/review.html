@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Market | Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="review-page">
+
+<nav>
+    <a href="LOGIN1.html">Unsecure Login</a>
+    <a href="LOGIN2.html">Secure Login</a>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="review.html">Reviews</a>
+    <a href="Review2.html">Vulnerable Review</a>
+      <a href="Review1.html">Secure Review</a>
+</nav>
+
+<h1>Write Your Review Here</h1>
+<div class="card">
+    <button onclick="toggleTheme()">Toggle Dark Mode</button><br><br>
+
+    <form id="feedbackForm">
+        <label>Full Name:
+            <input type="text" name="fullName" required>
+        </label><br><br>
+
+        <label>Email Address:
+            <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>Create Password:
+            <input type="password" name="passcode" required>
+        </label><br><br>
+
+        <label>Pick a Product:
+            <select name="itemChoice">
+                <option value="SmartWatch X300">SmartWatch X300</option>
+                <option value="Phone Z1">Phone Z1</option>
+                <option value="Headset Pro">Headset Pro</option>
+            </select>
+        </label><br><br>
+
+        <label>Your Satisfaction:</label><br>
+        <input type="radio" name="mood" value="Very Happy" required> Very Happy<br>
+        <input type="radio" name="mood" value="So-so"> So-so<br>
+        <input type="radio" name="mood" value="Unhappy"> Unhappy<br><br>
+
+        <label>What did you like?</label><br>
+        <input type="checkbox" name="likes" value="Battery"> Battery<br>
+        <input type="checkbox" name="likes" value="Design"> Design<br>
+        <input type="checkbox" name="likes" value="Build"> Build Quality<br><br>
+
+        <label>Your Feedback:<br>
+            <textarea name="commentBox" rows="5" cols="50"></textarea>
+        </label><br><br>
+
+        <label>Upload a Photo:
+            <input type="file" name="uploadPic" accept="image/*">
+        </label><br><br>
+
+        <button type="submit">Send Review</button>
+    </form>
+</div>
+
+
+</body>
+</html>

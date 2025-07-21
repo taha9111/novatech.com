@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - NOVATech</title>
+  <link rel="stylesheet" href="stylelogin.css" />
+  <script src="script2.js" defer></script>
+</head>
+<body class="login-page" style="background: #f6f7f9;">
+  <div class="login-card">
+    <div class="login-left">
+      <img src="nova png.png" alt="NOVATech Logo" class="login-logo" />
+      <h2>Welcome back</h2>
+      <p class="login-sub">Please enter your details</p>
+      <button class="google-btn">
+        <img src="google-icon.png" alt="Google" style="height:20px;vertical-align:middle;margin-right:8px;">
+        Sign in with Google
+      </button>
+      <div class="divider"><span>or</span></div>
+      <form id="loginForm">
+        <label for="username">Email address</label>
+        <input type="email" id="username" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <div class="login-options">
+          <label><input type="checkbox" /> Remember for 30 days</label>
+          <a href="#" class="forgot-link">Forgot password</a>
+        </div>
+        <input type="submit" value="Sign in" class="sign-in-btn" />
+      </form>
+      <div class="login-bottom">
+        <span>Don't have an account?</span>
+        <a href="register.html">Sign up</a>
+      </div>
+    </div>
+    <div class="login-right">
+      <img src="login photo.png" alt="Login Side" class="side-img" />
+      <div class="side-text">
+        <h3>Bring your ideas to life.</h3>
+        <p>Sign up for free and enjoy access to all features for 30 days. No credit card required.</p>
+      </div>
+    </div>
+  </div>
+  <footer style="text-align:center; margin-top:32px; color:#888;">
+    <p>&copy; 2025 NOVATech. All rights reserved.</p>
+  </footer>
+</body>
+</html>

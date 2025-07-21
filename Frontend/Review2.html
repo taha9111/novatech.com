@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review - Mini-Market (Vulnerable)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="Script1.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Reviews</h1>
+    <nav>
+        <a href="LOGIN1.html">Unsecure Login</a>
+    <a href="LOGIN2.html">Secure Login</a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="review.html">Reviews</a>
+      <a href="Review2.html">Vulnerable Review</a>
+      <a href="Review1.html">Secure Review</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Submit Your Review</h2>
+      <form id="reviewForm">
+        <label3 for="review">Your Review:</label3><br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section>
+      <h3>Reviews:</h3>
+      <div id="reviewSection"></div>
+    </section>
+    <p><em>This version is vulnerable to XSS. Try submitting: &lt;script&gt;alert('Hacked!')&lt;/script&gt;</em></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mini-Market. All rights reserved.</p>
+  </footer>
+</body>
+</html>
